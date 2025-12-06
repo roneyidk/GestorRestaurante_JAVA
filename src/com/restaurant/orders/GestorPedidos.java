@@ -24,4 +24,9 @@ public class GestorPedidos {
         }
         return null;
     }
+
+    public void eliminarPedido(int id) {
+        pedidos.removeIf(p -> p.getId() == id);
+    }
 }
+

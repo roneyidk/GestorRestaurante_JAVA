@@ -4,16 +4,19 @@
  */
 package com.restaurant.orders;
 
-public class Ensalada implements Platillo {
+public class Pepperoni extends ExtraDecorator {
+    public Pepperoni(Platillo platillo) {
+        super(platillo);
+    }
+
     @Override
     public double getPrecio() {
-        return 7.99;
+        return platillo.getPrecio() + 1.75;
     }
 
     @Override
     public String getDescripcion() {
-        return "Ensalada";
+        return platillo.getDescripcion() + " + Pepperoni";
     }
 }
-
 

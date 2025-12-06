@@ -7,8 +7,8 @@ package com.restaurant.orders;
 public enum EstadoPedido {
     PENDIENTE,
     EN_PREPARACION,
+    LISTO,
     ENVIADO,
     ENTREGADO,
     CANCELADO
 }
-

@@ -4,7 +4,6 @@
  */
 package com.restaurant.orders;
 
-
 public class PedidoItem {
     private Platillo platillo;
     private int cantidad;

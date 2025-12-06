@@ -5,16 +5,29 @@
 package com.restaurant.orders;
 
 public abstract class ExtraDecorator implements Platillo {
-    protected Platillo platillo;
+
+    protected Platillo platillo;  
+    protected String nombreExtra;
+    protected double precioExtra;
 
     public ExtraDecorator(Platillo platillo) {
         this.platillo = platillo;
     }
 
     @Override
-    public abstract double getPrecio();
+    public double getPrecio() {
+        return platillo.getPrecio() + precioExtra;
+    }
 
     @Override
-    public abstract String getDescripcion();
+    public String getDescripcion() {
+        return platillo.getDescripcion() + " + " + nombreExtra;
+    }
+
+    public String getKey() {
+        return nombreExtra;  // ✔ Aquí NO dará error
+    }
 }
+
+
 

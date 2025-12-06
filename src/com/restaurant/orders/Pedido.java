@@ -36,4 +36,16 @@ public class Pedido {
         for (PedidoItem it : items) suma += it.getSubtotal();
         return suma;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Pedido ID: ").append(id).append("\n");
+        sb.append("Cliente: ").append(cliente).append("\n");
+        sb.append("Estado: ").append(estado).append("\n");
+        sb.append("Items:\n");
+        for (PedidoItem it : items) sb.append("  - ").append(it.getDescripcionCompleta()).append("\n");
+        sb.append("Total: ").append(String.format("$%.2f", getTotal())).append("\n");
+        return sb.toString();
+    }
 }

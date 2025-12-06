@@ -1,0 +1,14 @@
+Pedido ID: 1
+Cliente: ronnye
+Estado: ENTREGADO
+Items:
+  - 5 x Hamburguesa + Queso + Bacon = $62,45
+Total: $62,45
+
+Pedido ID: 2
+Cliente: Donald
+Estado: CANCELADO
+Items:
+  - 3 x Pizza + Queso + Pepperoni = $48,72
+Total: $48,72
+
