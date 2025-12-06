@@ -20,7 +20,7 @@ public class MainFrame extends JFrame{
     private JComboBox<String> comboPlatillos;
     private JCheckBox checkQueso;
     private JCheckBox checkBacon;
-    private JSpinner spinnercantidad;
+    private JSpinner spinnerCantidad;
     private JTextField tfCliente;
     private DefaultTableModel tablaModel;
     private JTable tablaPedidos;
