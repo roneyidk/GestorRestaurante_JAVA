@@ -25,7 +25,7 @@ public abstract class ExtraDecorator implements Platillo {
     }
 
     public String getKey() {
-        return nombreExtra;  // ✔ Aquí NO dará error
+        return nombreExtra;  
     }
 }
 
